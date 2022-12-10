@@ -15,12 +15,21 @@
     --header-height: 78px;
 }
 body{
-min-height: 100vh;
+    min-height: 100vh;
 /* line-height: 20px; */
-line-height: 1.25rem;
-font-family: monospace;
+    line-height: 1.6;
+    font-family: monospace;
 }
 
+body::-webkit-scrollbar {
+    width: 10px;
+    height: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: linear-gradient(70deg,var(--primary-color), rgb(247, 47, 170));
+}
 
 .center {
     display: flex;
