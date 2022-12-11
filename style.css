@@ -31,8 +31,6 @@ body::-webkit-scrollbar-thumb {
     background: linear-gradient(70deg,var(--primary-color), rgb(247, 47, 170));
 }
 
-/* common */
-
 .center {
     display: flex;
     align-items: center;
@@ -173,9 +171,6 @@ body::-webkit-scrollbar-thumb {
 .header-icon-link:hover {
     color: var(--primary-color);
 }
-/* end header */
-
-
 /* modal */
 .modal{
     position: fixed;
@@ -185,18 +180,19 @@ body::-webkit-scrollbar-thumb {
     right: 0;
     background:rgba(0, 0, 0,0.5);
     display: none;
-    padding-top: 250px; 
-    padding-left: 540px;
     align-items: center;
     justify-content: center;
-     
+    padding-left: 25%;
+    padding-top:12%;
+    z-index: 100;
 }
 
 .modal-container{
     position: relative;
     background: #fff;
-    width: 900px;
+    width: 950px;
     min-height: 200px;
+    max-width: calc(100%-32px);
     
 }
 .modal-header{
