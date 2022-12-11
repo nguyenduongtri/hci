@@ -31,6 +31,8 @@ body::-webkit-scrollbar-thumb {
     background: linear-gradient(70deg,var(--primary-color), rgb(247, 47, 170));
 }
 
+/* common */
+
 .center {
     display: flex;
     align-items: center;
@@ -171,6 +173,9 @@ body::-webkit-scrollbar-thumb {
 .header-icon-link:hover {
     color: var(--primary-color);
 }
+/* end header */
+
+
 
 /* Cart content */
 .cart{
