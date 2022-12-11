@@ -631,5 +631,33 @@
         </div>
     </footer>
     <script src="script.js"></script>
+    <!-- Script Modal -->
+    <script>
+        // Get the modal / event
+        var modal = document.getElementById("myModal");
+        
+        // Get the button that opens the modal / event
+        var btn = document.getElementById("myOpen");
+        
+        // Get the <span> element that closes the modal / event
+        var span = document.getElementsByClassName("modal-close")[0];
+        
+        // When the user clicks the button, open the modal / Mở modal
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal / Đóng modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it / Bấm ở ngoài modal cũng sẽ đóng modal
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        </script>
 </body>
 </html>
