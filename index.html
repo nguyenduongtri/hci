@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="themify-icons/themify-icons.css">
 </head>
 <body>
     <div id="header" class="" >
@@ -79,17 +80,48 @@
                 </li>
                 
         </ul>
-
+        <!-- Icon search header / mở Modal-->
+        <div id="myOpen">
         <ul class="header-icon center">
-            <li class="header-icon-item center">
-                <a href="#" class="header-icon-link">
-                <i class="search-icon bx bx-search-alt"></i>
-                </a>
-            </li>
-        </ul>
-
+                <li class="header-icon-item center">
+                    <a href="#" class="header-icon-link">
+                            <i class="ti-search"></i>
+                    </a>
+            </ul>
+        </div>
+     
+<!-- Modal -->
     </div>
-   
+    <div class="modal" id="myModal">
+        <div class="modal-container">
+                        <div class="modal-close" >
+                           <i class="ti-close" ></i>
+                         </div>
+            <header class="modal-header">                             
+                    <i class ="ti-search" ></i>
+                        Tìm kiếm                                    
+            </header>
+            <div class="modal-body">
+                <label for="" class="modal-label">
+                    <i class="ti-search"></i>
+                        Tìm kiếm
+                </label>
+                <input type="text" class="modal-input" placeholder="Tìm kiếm...">
+                <button id="search">
+                    Tìm kiếm
+                </button>
+
+            </div>
+
+            <div class="modal-footer">
+                <p class="modal-help"> Cần <a href="https://www.google.com/">Hỗ Trợ?</a></p>
+            </div>
+
+        </div>
+        </div>
+
+        <!-- Hết Modal -->
+
     <div class="container">
         <div class="center">
         <div class="list">
@@ -599,6 +631,5 @@
         </div>
     </footer>
     <script src="script.js"></script>
-    
 </body>
 </html>
